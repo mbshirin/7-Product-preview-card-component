@@ -1,0 +1,103 @@
+body {
+    background-color: hsl(30, 38%, 92%) !important;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: row;
+    max-width: 50% !important;
+    padding: 0 !important;
+}
+
+.container #desktop {
+    width: 50%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container #mobile {
+    display: none;
+}
+
+.container .information {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+}
+
+.container .information p {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+
+.container .information h1 {
+    font-weight: bold;
+    font-size: 40px;
+    width: 75%;
+}
+
+.container .information .price {
+    display: flex;
+}
+
+.container .information .price h1{
+    color: hsl(158, 36%, 37%);
+    font-size: 3rem;
+    margin-top: 35px;
+}
+
+.container .information .price p {
+    margin-top: 54px;
+    letter-spacing: normal;
+    text-decoration: line-through;
+    font-size: 1.25rem;
+}
+
+.container .information button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.container .information button:hover {
+    background-color: rgba(51, 61, 51, 0.977);
+}
+
+.container .information button img {
+    max-width: 7%;
+    margin-right: 7px;
+}
+
+@media screen and (max-width:767px) {
+    .container {
+        flex-direction: column;
+        max-width: 95% !important;
+    }
+
+    .container #desktop {
+        display: none;
+    }
+
+    .container #mobile {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: block;
+    }
+
+    .container .information h1 {
+        width: 100%;
+        font-size: 27px;
+    }
+
+    .container .information .price h1 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+}
